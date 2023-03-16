@@ -58,6 +58,7 @@
         <microprofile.openapi.tck.version>3.1.payara-p1</microprofile.openapi.tck.version>
         <mptck.suite>${basedir}/src/test/resources/tck-suite.xml</mptck.suite>
         <payara.executable>${payara.home}/bin/asadmin</payara.executable>
+	<micro.randomPort>false</micro.randomPort>
         
         <!-- OpenAPI test url -->
         <test.url>http://localhost:8080/openapi/</test.url>
