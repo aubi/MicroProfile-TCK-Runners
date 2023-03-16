@@ -184,6 +184,17 @@
 
     <profiles>
         <profile>
+            <id>windows-profile</id>
+            <activation>
+                <os>
+                    <family>Windows</family>
+                </os>
+            </activation>
+            <properties>
+                <payara.executable>${payara.home}/bin/asadmin.bat</payara.executable>
+            </properties>
+        </profile>
+        <profile>
             <id>payara-server-embedded</id>
             <properties>
                 <test.url>http://localhost:8181/openapi/</test.url>
